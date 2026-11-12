@@ -1,5 +1,7 @@
 # Invoice Generator
 
+[![Tests](https://github.com/OmarShemis/invoice-generator/actions/workflows/tests.yml/badge.svg)](https://github.com/OmarShemis/invoice-generator/actions/workflows/tests.yml)
+
 A Python/PySide6 desktop app for creating single-item PDF invoices with ReportLab.
 
 ## Features
@@ -44,3 +46,7 @@ uv run python -m unittest discover -s tests -v
 ## Scope
 
 Learning/portfolio project: one item and one currency per invoice, basic Latin-font output. No currency conversion, accounting integrations or electronic tax submission. The default 14% tax is editable and is not tax advice. Jurisdiction-specific invoice requirements are not implemented.
+
+## Architecture and verification
+
+[Architecture](docs/architecture.md) · [MIT licence](LICENSE). Unit tests and CI are reproducible with the commands above. Live API/model quality requires separate evaluation.
